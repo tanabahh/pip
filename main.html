@@ -1,0 +1,55 @@
+<!--
+добавить окраску для нажатия
+добавить кнопку с исотрией(?)
+добавить картинку для шапки
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PIP-Lab1</title>
+    <link href="static/style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <div id="header">
+        Mozhanova Taisia Evgenevna<br>
+        Group P3212<br>
+        212090<br>
+    </div>
+</head>
+<body>
+<div id="content">
+<table>
+    <form action="script.php" method="get">
+    <tr>
+        <th>Координата</th>
+        <th>Значение</th>
+    </tr>
+    <tr>
+        <td>Y</td>
+        <td><input class = "contact" type="text" oninput="CheckY()" name="y" id="y"><div id="message_for_Y"></div></td>
+    </tr>
+    <tr>
+        <td>R</td>
+        <td><input class = "contact" type="text" oninput="CheckR()" name="r" id="r"><div id="message_for_R"></div></td>
+    </tr>
+        <tr>
+            <td>X</td>
+            <td><table>
+                <tr>
+                    <td><input class="button" onchange="CheckX()"  type="submit" name="x" value="-5"></td>
+                    <td><input class="button" type="submit" name="x" value="-4"></td>
+                    <td><input class="button" type="submit" name="x" value="-3"></td>
+                    <td><input class="button" type="submit" name="x" value="-2"></td>
+                    <td><input class="button" type="submit" name="x" value="-1"></td>
+                    <td><input class="button" type="submit" name="x" value="0"></td>
+                    <td><input class="button" type="submit" name="x" value="1"></td>
+                    <td><input class="button" type="submit" name="x" value="2"></td>
+                    <td><input class="button" type="submit" name="x" value="3"></td>
+                </tr>
+            </table></td>
+        </tr>
+    </form>
+</table>
+</div>
+</body>
+</html>
